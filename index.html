@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Face Recognition</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/4.3.1/fabric.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <div class="container">
+        <center>
+            <h3>Image Recognition</h3>
+            <br><br>
+        <p>Model is trained to identify the following objects:</p>
+        <hr>
+        <b class="name_of_objects">
+            brother
+            <h3 id="brother"></h3>
+            <hr>
+            sister
+            <h3 id="sister"></h3>
+            <hr>
+            father
+            <h3 id="father"></h3>
+            <hr>
+            mother
+            <h3 id="mother"></h3>
+            <hr>
+        </b>
+        <label>Webcam View -</label>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-default heading" id="capture" onclick="capture()">Capture</button>
+        <br>
+        <button class="btn btn-default heading" id="identify" onclick="identify()">identify</button>
+        </center>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
